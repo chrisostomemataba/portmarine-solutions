@@ -1,0 +1,182 @@
+.heroSection {
+  position: relative;
+  height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+}
+
+.heroImage {
+  z-index: -1;
+}
+
+.heroOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(2, 48, 71, 0.7);
+  display: flex;
+  align-items: center;
+}
+
+.heroTitle {
+  font-family: 'Playfair Display', serif;
+  font-size: 3.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.heroSubtitle {
+  font-family: 'Roboto Slab', serif;
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin-bottom: 2rem;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.mainContent {
+  padding: 4rem 0;
+}
+
+.sectionTitle {
+  font-family: 'Playfair Display', serif;
+  color: #023047;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.clientCard {
+  padding: 1.5rem;
+  text-align: center;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.clientCard:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.clientName {
+  font-family: 'Roboto Slab', serif;
+  margin-top: 1rem;
+  font-size: 1rem;
+}
+
+.clientDetails {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.clientDetailsPaper {
+  padding: 2rem;
+  max-width: 500px;
+  width: 90%;
+}
+
+.clientDetailsName {
+  font-family: 'Playfair Display', serif;
+  color: #023047;
+  margin-bottom: 0.5rem;
+}
+
+.clientDetailsIndustry {
+  font-family: 'Roboto Slab', serif;
+  color: #219ebc;
+  margin-bottom: 1rem;
+}
+
+.clientDetailsDescription {
+  font-family: 'Lato', sans-serif;
+  color: #495057;
+  margin-bottom: 1.5rem;
+}
+
+.closeButton {
+  font-family: 'Roboto Slab', serif;
+}
+
+.testimonialsSection {
+  margin-top: 4rem;
+}
+
+.testimonialCard {
+  padding: 2rem;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.testimonialQuote {
+  font-family: 'Lato', sans-serif;
+  font-style: italic;
+  color: #495057;
+  margin-bottom: 1rem;
+}
+
+.testimonialAuthor {
+  font-family: 'Roboto Slab', serif;
+  color: #023047;
+  margin-bottom: 0.5rem;
+}
+
+.testimonialPosition {
+  font-family: 'Lato', sans-serif;
+  color: #219ebc;
+}
+
+@media (max-width: 960px) {
+  .heroTitle {
+    font-size: 3rem;
+  }
+
+  .heroSubtitle {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .heroSection {
+    height: 50vh;
+  }
+
+  .heroTitle {
+    font-size: 2.5rem;
+  }
+
+  .heroSubtitle {
+    font-size: 1rem;
+  }
+
+  .mainContent {
+    padding: 2rem 0;
+  }
+
+  .sectionTitle {
+    font-size: 2rem;
+  }
+
+  .clientDetailsName {
+    font-size: 1.5rem;
+  }
+
+  .clientDetailsIndustry {
+    font-size: 1.2rem;
+  }
+}

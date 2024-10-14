@@ -1,0 +1,365 @@
+.heroSection {
+  position: relative;
+  height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+}
+
+.heroImage {
+  z-index: -1;
+}
+
+.heroOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(2, 48, 71, 0.7);
+  display: flex;
+  align-items: center;
+}
+
+.heroTitle {
+  font-family: 'Playfair Display', serif;
+  font-size: 3.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.heroSubtitle {
+  font-family: 'Roboto Slab', serif;
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin-bottom: 2rem;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.mainContent {
+  padding: 4rem 0;
+}
+
+.categoryCard {
+  padding: 2rem;
+  text-align: center;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-top: 5px solid;
+  transition: transform 0.3s ease-in-out;
+}
+
+.categoryCard:hover {
+  transform: translateY(-10px);
+}
+
+.iconWrapper {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.iconWrapper svg {
+  font-size: 2.5rem;
+  color: #ffffff;
+}
+
+.categoryTitle {
+  font-family: 'Roboto Slab', serif;
+  margin-bottom: 1rem;
+}
+
+.learnMoreBtn {
+  margin-top: auto;
+}
+
+.section {
+  margin-top: 6rem;
+  margin-bottom: 6rem;
+}
+
+.sectionTitle {
+  font-family: 'Playfair Display', serif;
+  color: #023047;
+  margin-bottom: 2.5rem;
+  text-align: center;
+}
+
+.downloadBtn {
+  margin-top: 2rem;
+  font-family: 'Roboto Slab', serif;
+  font-weight: 600;
+  padding: 0.5rem 1.5rem;
+}
+
+.hexGrid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 2rem 0;
+}
+
+.hexItem {
+  width: 150px;
+  height: 173px;
+  background-color: #219ebc;
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+  padding: 20px;
+  text-align: center;
+  color: #ffffff;
+  transition: background-color 0.3s ease;
+}
+
+.hexItem:hover {
+  background-color: #023047;
+}
+
+.bentoGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 200px);
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.bentoItem1 {
+  grid-column: span 2;
+  grid-row: span 2;
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.bentoItem2 {
+  grid-column: span 1;
+  grid-row: span 1;
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.bentoItem3 {
+  grid-column: span 1;
+  grid-row: span 1;
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.bentoItem4 {
+  grid-column: span 2;
+  grid-row: span 1;
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.modalTitle {
+  font-family: 'Playfair Display', serif;
+  color: #023047;
+}
+
+.modalContent {
+  font-family: 'Lato', sans-serif;
+  color: #495057;
+  line-height: 1.6;
+}
+
+@media (max-width: 960px) {
+  .heroTitle {
+    font-size: 3rem;
+  }
+
+  .heroSubtitle {
+    font-size: 1.2rem;
+  }
+
+  .hexItem {
+    width: 120px;
+    height: 138px;
+  }
+
+  .bentoGrid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 200px);
+  }
+
+  .bentoItem1 {
+    grid-column: span 2;
+    grid-row: span 1;
+  }
+
+  .bentoItem4 {
+    grid-column: span 2;
+    grid-row: span 1;
+  }
+}
+
+@media (max-width: 600px) {
+  .heroSection {
+    height: 50vh;
+  }
+
+  .heroTitle {
+    font-size: 2.5rem;
+  }
+
+  .heroSubtitle {
+    font-size: 1rem;
+  }
+
+  .mainContent {
+    padding: 2rem 0;
+  }
+
+  .sectionTitle {
+    font-size: 2rem;
+  }
+
+  .hexItem {
+    width: 100px;
+    height: 115px;
+  }
+
+  .bentoGrid {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 200px);
+  }
+
+  .bentoItem1, .bentoItem2, .bentoItem3, .bentoItem4 {
+    grid-column: span 1;
+    grid-row: span 1;
+  }
+
+  .downloadBtn {
+    font-size: 0.9rem;
+    padding: 0.4rem 1.2rem;
+  }
+
+  .section {
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+  }
+}
+
+/* Additional styles for better spacing and responsiveness */
+.categoryCard {
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.iconWrapper {
+  margin-bottom: 0.5rem;
+}
+
+.categoryTitle {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.learnMoreBtn {
+  align-self: center;
+}
+
+.hexGrid {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.hexItem {
+  font-size: 0.9rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.bentoGrid {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.modalTitle {
+  font-size: 1.8rem;
+  padding: 1rem 1.5rem;
+}
+
+.modalContent {
+  padding: 0 1.5rem 1.5rem;
+}
+
+@media (max-width: 1200px) {
+  .hexGrid {
+    max-width: 750px;
+  }
+
+  .bentoGrid {
+    max-width: 800px;
+  }
+}
+
+@media (max-width: 960px) {
+  .categoryCard {
+    height: 220px;
+  }
+
+  .hexGrid {
+    max-width: 600px;
+  }
+
+  .bentoGrid {
+    max-width: 600px;
+  }
+}
+
+@media (max-width: 600px) {
+  .categoryCard {
+    height: auto;
+    padding: 1.5rem;
+  }
+
+  .iconWrapper {
+    width: 60px;
+    height: 60px;
+  }
+
+  .iconWrapper svg {
+    font-size: 2rem;
+  }
+
+  .categoryTitle {
+    font-size: 1rem;
+  }
+
+  .hexGrid {
+    max-width: 300px;
+  }
+
+  .bentoGrid {
+    max-width: 300px;
+  }
+
+  .modalTitle {
+    font-size: 1.5rem;
+    padding: 0.8rem 1rem;
+  }
+
+  .modalContent {
+    padding: 0 1rem 1rem;
+    font-size: 0.9rem;
+  }
+}

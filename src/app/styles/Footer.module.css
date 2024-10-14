@@ -1,0 +1,75 @@
+.footer {
+  background-color: #023047;
+  color: #ffffff;
+  padding: 4rem 0 2rem;
+}
+
+.sectionTitle {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+  position: relative;
+}
+
+.sectionTitle::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  width: 50px;
+  height: 2px;
+  background-color: #219ebc;
+}
+
+.partnerText {
+  font-family: 'Lato', sans-serif;
+  margin-bottom: 1.5rem;
+}
+
+.partnerLogos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  align-items: center;
+}
+
+.socialIcons {
+  display: flex;
+  gap: 1rem;
+}
+
+.contactInfo {
+  font-family: 'Lato', sans-serif;
+  line-height: 1.6;
+}
+
+.copyright {
+  margin-top: 3rem;
+  text-align: center;
+  font-family: 'Lato', sans-serif;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+@media (max-width: 960px) {
+  .footer {
+    padding: 3rem 0 1.5rem;
+  }
+
+  .sectionTitle {
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .partnerLogos {
+    justify-content: center;
+  }
+
+  .socialIcons {
+    justify-content: center;
+  }
+
+  .contactInfo {
+    text-align: center;
+  }
+}

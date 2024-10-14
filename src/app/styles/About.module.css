@@ -1,0 +1,216 @@
+.heroSection {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+}
+
+.heroImage {
+  z-index: -1;
+}
+
+.heroOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(2, 48, 71, 0.7);
+  display: flex;
+  align-items: center;
+}
+
+.heroTitle {
+  font-family: 'Playfair Display', serif;
+  font-size: 4rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.heroSubtitle {
+  font-family: 'Roboto Slab', serif;
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin-bottom: 2rem;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.aboutContainer {
+  padding: 6rem 0;
+  background-color: #f8f9fa;
+}
+
+.sectionTitle {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.5rem;
+  color: #023047;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.sectionText {
+  font-family: 'Lato', sans-serif;
+  font-size: 1.1rem;
+  color: #495057;
+  line-height: 1.8;
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto 3rem;
+}
+
+.section {
+  margin-bottom: 4rem;
+}
+
+.subsectionTitle {
+  font-family: 'Roboto Slab', serif;
+  font-size: 2rem;
+  color: #219ebc;
+  margin-bottom: 1.5rem;
+}
+
+.subsectionText {
+  font-family: 'Lato', sans-serif;
+  font-size: 1rem;
+  color: #495057;
+  line-height: 1.6;
+}
+
+.image {
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.valuePaper {
+  padding: 1.5rem;
+  text-align: center;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.valuePaper:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.valueIcon {
+  background-color: #219ebc;
+  color: #ffffff;
+  margin-bottom: 1rem;
+  width: 60px;
+  height: 60px;
+}
+
+.valueTitle {
+  font-family: 'Roboto Slab', serif;
+  font-size: 1.2rem;
+  color: #023047;
+  margin-bottom: 0.5rem;
+}
+
+.valueDescription {
+  font-family: 'Lato', sans-serif;
+  font-size: 0.9rem;
+  color: #495057;
+}
+
+.statPaper {
+  padding: 1.5rem;
+  text-align: center;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.statPaper:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.statValue {
+  font-family: 'Roboto Slab', serif;
+  font-size: 2.5rem;
+  color: #023047;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.statLabel {
+  font-family: 'Lato', sans-serif;
+  font-size: 1rem;
+  color: #495057;
+}
+
+@media (max-width: 960px) {
+  .heroTitle {
+    font-size: 3rem;
+  }
+
+  .heroSubtitle {
+    font-size: 1.2rem;
+  }
+
+  .sectionTitle {
+    font-size: 2rem;
+  }
+
+  .subsectionTitle {
+    font-size: 1.8rem;
+  }
+
+  .statValue {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .heroTitle {
+    font-size: 2.5rem;
+  }
+
+  .heroSubtitle {
+    font-size: 1rem;
+  }
+
+  .aboutContainer {
+    padding: 4rem 0;
+  }
+
+  .sectionTitle {
+    font-size: 1.8rem;
+  }
+
+  .subsectionTitle {
+    font-size: 1.5rem;
+  }
+
+  .sectionText,
+  .subsectionText {
+    font-size: 0.9rem;
+  }
+
+  .valueTitle {
+    font-size: 1rem;
+  }
+
+  .valueDescription {
+    font-size: 0.8rem;
+  }
+
+  .statValue {
+    font-size: 1.8rem;
+  }
+
+  .statLabel {
+    font-size: 0.9rem;
+  }
+}

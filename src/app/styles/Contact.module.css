@@ -1,0 +1,139 @@
+.heroSection {
+  position: relative;
+  height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+}
+
+.heroImage {
+  z-index: -1;
+}
+
+.heroOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(2, 48, 71, 0.7);
+  display: flex;
+  align-items: center;
+}
+
+.heroTitle {
+  font-family: 'Playfair Display', serif;
+  font-size: 3.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.heroSubtitle {
+  font-family: 'Roboto Slab', serif;
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin-bottom: 2rem;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.mainContent {
+  padding: 4rem 0;
+}
+
+.formPaper, .contactInfoPaper {
+  padding: 2rem;
+  height: 100%;
+}
+
+.formTitle, .contactInfoTitle, .mapTitle {
+  font-family: 'Playfair Display', serif;
+  color: #023047;
+  margin-bottom: 1.5rem;
+}
+
+.submitButton {
+  margin-top: 1rem;
+}
+
+.contactItem {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.contactIcon {
+  margin-right: 1rem;
+  color: #219ebc;
+}
+
+.socialLinks {
+  margin-top: 1.5rem;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.facebookIcon {
+  color: #1877f2 !important;
+  margin-right: 1rem;
+}
+
+.linkedinIcon {
+  color: #0077b5 !important;
+}
+
+.mapSection {
+  background-color: #f5f5f5;
+  padding: 4rem 0;
+  z-index: 1;
+}
+
+.mapContainer {
+  height: 400px;
+  width: 100%;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 960px) {
+  .heroTitle {
+    font-size: 3rem;
+  }
+
+  .heroSubtitle {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .heroSection {
+    height: 50vh;
+  }
+
+  .heroTitle {
+    font-size: 2.5rem;
+  }
+
+  .heroSubtitle {
+    font-size: 1rem;
+  }
+
+  .mainContent {
+    padding: 2rem 0;
+  }
+
+  .formPaper, .contactInfoPaper {
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+  }
+
+  .mapSection {
+    padding: 2rem 0;
+  }
+
+  .mapContainer {
+    height: 300px;
+  }
+}

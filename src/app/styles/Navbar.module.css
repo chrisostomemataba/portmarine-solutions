@@ -1,0 +1,52 @@
+.navbar {
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.navbar.scrolled {
+  background-color: rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(10px);
+}
+
+.logo {
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.companyName {
+  background: linear-gradient(45deg, #023047, #219EBC);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: opacity 0.3s ease;
+}
+
+.scrolledText {
+  color: #023047 !important;
+  opacity: 1;
+}
+
+.navButton {
+  margin-left: 16px;
+  transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+.navButton:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.scrolled .navButton:hover {
+  background-color: rgba(2, 48, 71, 0.1);
+}
+
+.menuButton {
+  transition: color 0.3s ease;
+}
+
+@media (max-width: 600px) {
+  .companyName {
+    font-size: 1.2rem;
+  }
+
+  .navButton {
+    margin-left: 8px;
+  }
+}
