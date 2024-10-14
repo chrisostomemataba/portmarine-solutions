@@ -1,3 +1,4 @@
+import { Analytics } from "@vercel/analytics/react";
 import { Inter, Playfair_Display, Roboto_Slab, Lato } from "next/font/google";
 import ThemeRegistry from "./components/ThemeRegistry/ThemeRegistry";
 import MUIProvider from "./components/MUIProvider";
@@ -23,7 +24,10 @@ export default function RootLayout({ children }) {
         className={`${inter.className} ${playfairDisplay.className} ${robotoSlab.className} ${lato.className}`}
       >
         <ThemeRegistry>
-          <MUIProvider>{children}</MUIProvider>
+          <MUIProvider>
+            {children}
+            <Analytics />
+          </MUIProvider>
         </ThemeRegistry>
       </body>
     </html>
